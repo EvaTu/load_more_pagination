@@ -17,11 +17,13 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <div className="card-list">
+    <div className="App">
+      <div className="container">
         {items.slice(0,visible).map((item, index) =>
         <div className="card">
-          <span>{index + 1}</span>
+          <div className="id">
+            <span>{index + 1}</span>
+          </div>
           <p>{item.body}</p>
         </div>
           )}
@@ -29,6 +31,7 @@ function App() {
           Load More
         </button>
       </div>
+      
       
     </div>
   );
